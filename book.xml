@@ -1,0 +1,727 @@
+<book>
+	
+	<!-- LAYOUT SETUP -->
+	<layout>		
+		<width>100%</width>
+		<height>100%</height>
+		<minWidth>960</minWidth>
+		<minHeight>550</minHeight>
+		<offsetX>0</offsetX>
+		<offsetY>0</offsetY>
+	</layout>
+	
+	<!-- BACKGROUND IMAGE/COLOR SETUP -->
+	<background>
+		<baseColor>0x000000</baseColor>
+		<source>gambar/background.png</source>
+		<resize>resizeToOriginal</resize>
+		<align>alignCenter</align>
+	</background>
+	
+	<!-- LOGO SETUP -->
+	<logo1>
+		<source>gambar/logo1.png</source>
+		<xMargin>8</xMargin>
+		<yMargin>8</yMargin>
+		<align>alignTopLeft</align>
+		<link>http://www.smkngudo.sch.id/</link>
+		<linkTarget>_blank</linkTarget>
+	</logo1>
+
+	<logo2>
+		<source>gambar/logo2.png</source>
+		<xMargin>8</xMargin>
+		<yMargin>8</yMargin>
+		<align>alignTopRight</align>
+		<link>http://www.smkngudo.sch.id/</link>
+		<linkTarget>_blank</linkTarget>
+	</logo2>
+	
+	<!-- SUMMARY PANEL -->
+	<summaryPanel>
+		<width>300</width>
+		<align>right</align>
+		<margin>10</margin>
+		<visible>false</visible>
+	</summaryPanel>
+	
+	<!-- SEARCH PARAMETERS -->
+	<search>
+		<caseSensitive>false</caseSensitive>
+		<wholeWords>false</wholeWords>
+		<tick>0.001</tick>		
+	</search>
+	
+	<!-- GLOBAL STYLESHEET -->
+	<globalStyleSheet>
+	<![CDATA[
+		
+		a:link { color: #A4B3F3; text-decoration: none; }
+		a:hover { text-decoration: underline; }
+		h1 { display: block; font-size: 18; color: #ffffff; text-align: center; }
+		
+	]]>
+	</globalStyleSheet>
+	
+	<!-- OPTIONS BAR -->
+	<optionsBar>		
+		<groups>
+			
+			<!-- LEFT GROUP -->
+			<group id="leftGroup" visible="true">			
+				<item id="printButton" />
+				<item id="separator" />
+				<item id="soundButton" />
+				<item id="separator" />
+				<item id="autoFlipButton" />
+				<item id="separator" />
+				<item id="zoomButton" />
+			</group>	
+			
+			<!-- MIDDLE GROUP -->
+			<group id="midGroup" visible="true">
+				<item id="firstPageButton" />
+				<item id="previousPageButton" />
+				<item id="spacing" ammount="2" />
+				<item id="pageInput" width="120" />
+				<item id="spacing" ammount="2" />
+				<item id="nextPageButton" />
+				<item id="lastPageButton" />
+			</group>	
+			
+			<!-- RIGHT GROUP -->
+			<group id="rightGroup" visible="true">
+				<item id="aboutButton" />			
+				<item id="sendToFriendButton" />
+				<item id="separator" />
+				<item id="summaryButton" />
+				<item id="separator" />
+				<item id="fullscreenButton" />
+			</group>
+			
+		</groups>		
+	</optionsBar>
+	
+	<!-- FULL VIEW (ZOOM SCREEN) TOOLBAR BUTTONS -->
+	<fullView>		
+		<toolbar>		
+			<item id="closeButton" />
+			<item id="separator" />
+			<item id="nextButton" />
+			<item id="previousButton" />
+			<item id="separator" />
+			<item id="cursorButton" />
+			<item id="clickDragButton" />
+			<item id="mousePanButton" selected="true" />
+			<item id="separator" />
+			<item id="printButton" />
+		</toolbar>		
+	</fullView>
+	
+	<!-- AUTOFLIP -->
+	<autoFlip>
+		<autoStart>false</autoStart>
+		<stopOnUserFlip>true</stopOnUserFlip>
+		<delay>5</delay>		
+	</autoFlip>
+	
+	<!-- FLIP BOOK SETUP -->
+	<flipBook>
+		<hardCovers>true</hardCovers>
+		<jumpDelay>0.1</jumpDelay>
+	</flipBook>
+	
+	<!-- PAGE SETUP -->
+	<bookPage>
+		<width>437</width>
+		<height>509</height>
+		<flipZoneWidth>50</flipZoneWidth>
+		<flipZoneHeight>540</flipZoneHeight>
+		<flipZoneAlignY>top</flipZoneAlignY>		
+		<shading>true</shading>
+	</bookPage>
+	
+	<!-- BACKGROUND MUSIC -->
+	<bgMusic>
+		<playlist>Musik.lnk</playlist>
+		<autoLoad>true</autoLoad>
+		<autoPlay>false</autoPlay>
+		<volume>0.75</volume>
+		<buffer>1</buffer>
+		<fadeTime>5</fadeTime>		
+	</bgMusic>	
+	
+	<!-- SUMMARY CONTENT -->
+	<summary>
+		<entry type="chapter">
+			<title><![CDATA[RADIASI BENDA HITAM]]></title>
+			<content>
+				<entry type="page" pageId="1"><![CDATA[COVER]]></entry>
+				<entry type="page" pageId="3"><![CDATA[PERSEMBAHAN]]></entry>
+				<entry type="page" pageId="4"><![CDATA[MOTTO]]></entry>
+				<entry type="page" pageId="5"><![CDATA[KATA PENGANTAR]]></entry>
+				<entry type="chapter">
+					<title><![CDATA[BAB 1 PENDAHULUAN]]></title>
+					<content>
+						<entry type="page" pageId="6"><![CDATA[1.1 LATAR BELAKANG]]></entry>
+						<entry type="page" pageId="8"><![CDATA[1.2 RUMUSAN MASALAH]]></entry>
+						<entry type="page" pageId="8"><![CDATA[1.3 TUJUAN PENULISAN]]></entry>
+					</content>
+				</entry>
+				<entry type="chapter">
+					<title><![CDATA[BAB 2 PEMBAHASAN]]></title>
+					<content>
+						<entry type="page" pageId="9"><![CDATA[2.1 PENGERTIAN BENDA HITAM]]></entry>
+						<entry type="chapter">
+							<title><![CDATA[2.2 INTENSITAS RADIASI BENDA HITAM]]></title>
+							<content>
+								<entry type="page" pageId="12"><![CDATA[2.2.1 Hukum Stefan-Boltzmann]]></entry>
+								<entry type="page" pageId="18"><![CDATA[2.2.2 Hukum Pergeseran Wien]]></entry>
+								<entry type="page" pageId="25"><![CDATA[2.2.3 Teori Max Planck]]></entry>
+								<entry type="page" pageId="29"><![CDATA[2.2.4 Hukum Rayleigh-Jeans]]></entry>
+							</content>
+						</entry>
+					</content>
+				</entry>
+				<entry type="chapter">
+					<title><![CDATA[BAB 3 PENUTUP]]></title>
+					<content>
+						<entry type="page" pageId="31"><![CDATA[3.1 KESIMPULAN]]></entry>
+					</content>
+				</entry>
+				<entry type="page" pageId="34"><![CDATA[DAFTAR PUSTAKA]]></entry>
+				<entry type="page" pageId="35"><![CDATA[LAMPIRAN]]></entry>
+				<entry type="page" pageId="38"><![CDATA[COVER BELAKANG]]></entry>
+			</content>
+		 </entry>
+	</summary>
+	
+	<!-- BOOK PAGES -->
+	<pages>
+
+		<page>
+			<pageId>1</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Cover.swf</source>
+			<zoomSource></zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>2</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/Awal.png</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/Awal.png</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>3</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_001.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_001.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>4</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_002.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_002.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>5</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_003.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_003.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>6</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_004.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_004.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>7</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_005.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_005.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>8</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_006.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_006.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>9</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_007.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_007.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>10</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_008.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_008.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>11</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_009.jpg</source>
+			<zoomSource>halaman/meltednail.swf</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>12</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_010.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_010.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>13</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_011.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_011.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>14</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_012.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_012.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>15</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_013.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_013.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>16</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_014.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_014.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>17</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_015.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_015.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>18</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_016.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_016.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>19</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_017.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_017.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>20</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_018.jpg</source>
+			<zoomSource>halaman/blackbody.swf</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>21</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_019.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_019.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>22</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_020.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_020.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>23</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_021.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_021.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>24</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_022.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_022.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>25</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_023.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_023.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>26</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_024.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_024.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>27</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_025.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_025.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>28</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_026.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_026.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>29</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_027.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_027.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>30</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_028.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_028.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>31</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_029.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_029.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>32</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_030.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_030.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>33</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_031.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_031.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>34</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_032.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_032.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>35</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_033.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_033.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>36</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/FRB_034.jpg</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/FRB_034.jpg</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>37</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/Akhir.png</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/Akhir.png</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+
+		<page>
+			<pageId>38</pageId>
+			<baseColor>0xFFFFFF</baseColor>
+			<source>halaman/Fisika Modern & Radiasi Benda Hitam/kecil/Belakang.png</source>
+			<zoomSource>halaman/Fisika Modern & Radiasi Benda Hitam/besar/Belakang.png</zoomSource>			
+			<printAsBitmap>true</printAsBitmap>
+			<zoomPrintAsBitmap>true</zoomPrintAsBitmap>
+			<searchTags><![CDATA[]]></searchTags>
+		</page>
+	
+	</pages>
+	
+	
+	
+	<!-- TELL A FRIEND -->
+	<tellAFriend>
+		<width>516</width>
+		<height>248</height>
+		
+		<formWidth>270</formWidth>
+		<formMarginRight>30</formMarginRight>
+		<fieldsYSpacing>10</fieldsYSpacing>
+		<buttonsXSpacing>5</buttonsXSpacing>
+		<script>php/tellafriend.php</script>
+		<messageTime>1.5</messageTime>
+		
+		<iconWidth>24</iconWidth>
+		<iconHeight>23</iconHeight>
+		<showSocialLinks>true</showSocialLinks>
+		<socialYSpacing>10</socialYSpacing>
+	</tellAFriend>
+	
+	<!-- SOCIAL LINKS -->
+	<social>
+		<entry icon="gambar/ikon/twitter.png" link="http://www.twitter.com/" target="_blank"><![CDATA[Follow Twitter Saya]]></entry>
+		<entry icon="gambar/ikon/flickr.png" link="https://www.facebook.com/wahzukantclalhuw.ingetdhya/" target="_blank"><![CDATA[Lihat Facebook Saya]]></entry>
+		<entry icon="gambar/ikon/google+.png" link="https://plus.google.com/u/0/107610839268240385887/about/" target="_blank"><![CDATA[Lihat Saya di Google+]]></entry>
+	</social>
+		
+	<!-- CONTACT US -->
+	<contactUs>		
+		<width>560</width>
+		<height>248</height>
+		
+		<formWidth>270</formWidth>
+		<formMarginRight>20</formMarginRight>
+		<fieldsYSpacing>10</fieldsYSpacing>
+		<buttonsXSpacing>5</buttonsXSpacing>
+		<script>php/contact.php</script>
+		<messageTime>1.5</messageTime>
+		
+		<contactDetails>
+		<![CDATA[
+			<h1>Your Company Name</h1><br/>
+			<p><b>Address :</b> 45 Esquire Drv. 90245 CA, USA <br/>
+			<b>Phone :</b> +1 555 2365 <br/> 
+			<b>Fax :</b> +1 555 3653 <br/>
+			<b>E-mail :</b> <a href="mailto:office@example.com">office@example.com</a></p><br/>
+			<p><b>Twitter :</b> <a href="http://www.google.com/">Follow us on Twitter !</a><br/>
+			<b>Facebook :</b> <a href="http://www.google.com/">Become a fan on Facebook !</a></p>
+		]]>
+		</contactDetails>
+	</contactUs>
+
+	<!-- ABOUT US -->
+	<aboutUs>		
+		<width>516</width>
+		<height>248</height>
+		
+		<content>
+		<![CDATA[			
+			<h1 align='center'>Buku Elektronik Ini Dibuat Sebagai :</h1>
+			<p align='center'>Tugas Akhir Fisika BAB "Fisika Modern & Radioaktifitas"</p>
+			<p align='center'>Materi "Radiasi Benda Hitam"</p>
+			<img src="gambar/logo-.png" align="center"/>
+		]]>
+		</content>
+		
+	</aboutUs>
+	
+	<!-- UI TRANSLATE -->
+	<translate>		
+		<str0><![CDATA[Print Halaman Kiri]]></str0>
+		<str1><![CDATA[Daftar Isi]]></str1>
+		<str2><![CDATA[Buka Otomatis]]></str2>
+		<str3><![CDATA[Musik]]></str3>
+		<str4><![CDATA[Hubungi Teman]]></str4>
+		<str5><![CDATA[Halaman Depan]]></str5>
+		<str6><![CDATA[Halaman Sebelumnya]]></str6>
+		<str7><![CDATA[Halaman Berukutnya]]></str7>
+		<str8><![CDATA[Halaman Belakang]]></str8>
+		<str9><![CDATA[Mode Layar Penuh]]></str9>
+		<str10><![CDATA[%LEFT_PAGE% dan %RIGHT_PAGE% dari %TOTAL_PAGES%]]> </str10>
+		<str11><![CDATA[%FIRST_PAGE% dari %TOTAL_PAGES%]]></str11>
+		<str12><![CDATA[%LAST_PAGE% dari %TOTAL_PAGES%]]></str12>
+		<str13><![CDATA[Loncat ke Halanam]]></str13>
+		<str14><![CDATA[Perbesar Halaman]]></str14>
+		<str15><![CDATA[<b>Memuat Halaman <b>%PAGE%</b> dari <b>%TOTAL_PAGES%</b> (%PERCENTAGE%%)</b>]]></str15>
+		<str16><![CDATA[Ditemukan %FOUND_STRINGS% dari Halaman <b>%PAGE%</b>]]></str16>
+		<str17><![CDATA[Hasil Pencarian]]></str17>
+		<str18><![CDATA[Daftar Isi]]></str18>
+		<str19><![CDATA[<i>Cari di dalam buku...</i>]]></str19>
+		<str20><![CDATA[Print Halaman Kanan]]></str20>
+		<str21><![CDATA[<font color="#DD0099">Mencarian Pada Halaman %PERCENTAGE%%</font>]]></str21>
+		<str22><![CDATA[<font color="#DD0099">%NUM_RESULTS% Hasil Pencarian Dari <i>"%SEARCH_STRING%"</i></font>]]></str22>
+		<str23><![CDATA[<font color="#DD0099">Tidak di temukan Hasil Dari <i>"%SEARCH_STRING%"</i></font>]]></str23>
+		<str24><![CDATA[<b>%MATCH%</b><i>%REST%</i>]]></str24>
+		<str25><![CDATA[Print Halaman]]></str25>
+		<str26><![CDATA[Print Buku]]></str26>		
+		<str27><![CDATA[Hubungi Teman Tentang Buku Ini]]></str27>
+		<str28><![CDATA[Tutup]]></str28>
+		<str29><![CDATA[Halaman Berikutnya]]></str29>
+		<str30><![CDATA[Halaman Sebelumnya]]></str30>
+		<str31><![CDATA[Kursor Standar]]></str31>
+		<str32><![CDATA[Click-drag geser]]></str32>
+		<str33><![CDATA[Mouse-pindah]]></str33>
+		<str34><![CDATA[Memuat %PERCENTAGE%%]]></str34>
+		<str35><![CDATA[<font color="#FF99BB">Alamant Email Anda</font>]]></str35>
+		<str36><![CDATA[<font color="#FF99BB">Nama Anda</font>]]></str36>
+		<str37><![CDATA[<font color="#FF99BB">Alamat Email Teman Anda</font>]]></str37>
+		<str38><![CDATA[<font color="#FF99BB">Pesan Anda...</font>]]></str38>		
+		<str39><![CDATA[<font color="#DD0099">Tolong Isi Nama Anda !</font>]]></str39>
+		<str40><![CDATA[<font color="#DD0099">Tolong Isi Alamat Email Anda !</font>]]></str40>
+		<str41><![CDATA[<font color="#DD0099">Alamat Email Tidak Benar.<br/>Tolong Isi Dengan Benar !</font>]]></str41>
+		<str42><![CDATA[<font color="#DD0099">Tolong Isi Alamat Email Teman Anda !</font>]]></str42>
+		<str43><![CDATA[<font color="#DD0099">Alamat Email Teman Anda Tidak Benar.<br/>Tolong Isi Alamat Email Dengan Benar !</font>]]></str43>
+		<str44><![CDATA[<font color="#DD0099">Tolong Isi Pesan Untuk Teman Anda !</font>]]></str44>
+		<str45><![CDATA[<font color="#FF99BB">Nama Teman Anda !</font>]]></str45>
+		<!--<str46><![CDATA[]]></str46>
+		<str47><![CDATA[]]></str47>-->
+		<str48><![CDATA[<font color="#DD0099">Mengirim Pesan, Silahkan Tunggu...</font>]]></str48>
+		<str49><![CDATA[<font color="#DD0099"><b>Kirim Pesan</b></font>]]></str49>
+		<str50><![CDATA[Bersihkan Isian]]></str50>
+		<str51><![CDATA[Pesan Berhasil Dikirim !]]></str51>
+		<str52><![CDATA[<font color="#FFFFFF">%SOCIAL_LINK_TEXT%</font>]]></str52>
+		<str53><![CDATA[Print Halaman]]></str53>		
+		<str54><![CDATA[Kirim Pesan]]></str54>
+		<str55><![CDATA[Tentang Buku]]></str55>
+		<str56><![CDATA[Kontak]]></str56>
+		<str57><![CDATA[Tentang Buku]]></str57>		
+		<str58><![CDATA[<i>Nama Depan & Belakang</i>]]></str58>
+		<str59><![CDATA[<i>Alamat Email</i>]]></str59>
+		<str60><![CDATA[<i>Subjek</i>]]></str60>
+		<str61><![CDATA[<i>Pesan...</i>]]></str61>		
+		<str62><![CDATA[<font color="#DD0099">Tolong Isi Nama Depan & Belakang Anda !</font>]]></str62>
+		<str63><![CDATA[<font color="#DD0099">Tolong Isi Alamat Email Anda !</font>]]></str63>
+		<str64><![CDATA[<font color="#DD0099">Alamat Imail Anda Tidak Benar.<br/>Tolong Isi Dengan Benar !</font>]]></str64>
+		<str65><![CDATA[<font color="#DD0099">Tolong Isi Subjek Untuk Pesan Anda !</font>]]></str65>
+		<str66><![CDATA[<font color="#DD0099">Tolong Tuliskan Isi Pesan Anda !</font>]]></str66>
+		<str67><![CDATA[<font color="#DD0099">Mengirim Pesan, Silahkan Tunggu...</font>]]></str67>
+		<str68><![CDATA[<font color="#DD0099"><b>Kirim Pesan</b></font>]]></str68>
+		<str69><![CDATA[Bersihkan Isian]]></str69>
+		<str70><![CDATA[Pesan Berhasil dikirim !]]></str70>		
+	</translate>
+	
+</book>
